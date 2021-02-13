@@ -1,20 +1,27 @@
 body {
   padding: 10px;
+  background-color: blue;
 }
-
-.carousel {
-  position: relative;
-  width: 398px;
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+}
+.package {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   padding: 10px 40px;
   border: 1px solid #ccc;
   border-radius: 15px;
-  background: #eee;
+  background: rgb(199, 243, 4);
 }
 
-.carousel img {
+.package img {
   width: 130px;
   height: 130px;
-  /* make it block to remove space around images */
   display: block;
 }
 
@@ -60,8 +67,6 @@ body {
   padding: 0;
   list-style: none;
   transition: margin-left 250ms;
-  /* remove white-space between inline-block'ed li */
-  /* http://davidwalsh.name/remove-whitespace-inline-block */
   font-size: 0;
 }
 
