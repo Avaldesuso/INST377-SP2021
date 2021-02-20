@@ -12,92 +12,113 @@
     <div class="container">
       <form action="/api" method="post" name="main-form" id="main-form">
         <ul class="flex-outer">
-            <li>
-              <label for="fname">First Name</label>
-              <input
-                type="text"
-                name="fname"
-                id="fname"
-                placeholder="Enter your first name here"
-              />
-            </li>
-            <li>
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                name="lname"
-                id="lname"
-                placeholder="Enter your last name here"
-              />
-            </li>
-            <li>
-              <label for="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email here"
-              />
-            </li>
-            <li>
-              <label for="phone">Phone</label>
-              <input 
-              type="tel" 
-              name= "phone"
-              id="phone" 
-              placeholder="Enter your phone here" />
-            </li>
-            <li>
-              <label for="message">Message</label>
-              <textarea
-                rows="5"
-                cols="33"
-                name="message"
-                id="message"
-                placeholder="Enter your message here"
-              ></textarea>
-            </li>
-            <li>
-              <p>Age</p>
-              <ul class="flex-inner">
-                <li>
-                  <input type="checkbox" name="twenty-to-twentynine" id="twenty-to-twentynine" />
-                  <label for="twenty-to-twentynine">20-29</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="thirty-to-thirtynine" id="thirty-to-thirtynine" />
-                  <label for="thirty-to-thirtynine">30-39</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="fourty-to-fourtynine" id="fourty-to-fourtynine" />
-                  <label for="fourty-to-fourtynine">40-49</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="fifty-to-fiftynine" id="fifty-to-fiftynine" />
-                  <label for="fifty-to-fiftynine">50-59</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="sixty-to-sixtynine" id="sixty-to-sixtynine" />
-                  <label for="sixty-to-sixtynine">60-69</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="other" id="other" />
-                  <label for="other">Other</label>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <button 
-              type="submit" 
-              name="SubmitButton" 
-              id= "SubmitButton"
-              action="/api" 
+          <li>
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="Enter your first name here"
+            />
+          </li>
+          <li>
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Enter your last name here"
+            />
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email here"
+            />
+          </li>
+          <li>
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter your phone here"
+            />
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea
+              rows="5"
+              cols="33"
+              name="message"
+              id="message"
+              placeholder="Enter your message here"
+            ></textarea>
+          </li>
+          <li>
+            <p>Age</p>
+            <ul class="flex-inner">
+              <li>
+                <input
+                  type="checkbox"
+                  name="twenty-to-twentynine"
+                  id="twenty-to-twentynine"
+                />
+                <label for="twenty-to-twentynine">20-29</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="thirty-to-thirtynine"
+                  id="thirty-to-thirtynine"
+                />
+                <label for="thirty-to-thirtynine">30-39</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="fourty-to-fourtynine"
+                  id="fourty-to-fourtynine"
+                />
+                <label for="fourty-to-fourtynine">40-49</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="fifty-to-fiftynine"
+                  id="fifty-to-fiftynine"
+                />
+                <label for="fifty-to-fiftynine">50-59</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="sixty-to-sixtynine"
+                  id="sixty-to-sixtynine"
+                />
+                <label for="sixty-to-sixtynine">60-69</label>
+              </li>
+              <li>
+                <input type="checkbox" name="other" id="other" />
+                <label for="other">Other</label>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button
+              type="submit"
+              name="SubmitButton"
+              id="SubmitButton"
+              action="/api"
               method="post"
-              >
+            >
               Submit
-              </button>
-            </li>
-          </ul>
+            </button>
+          </li>
+        </ul>
       </form>
     </div>
   </body>
