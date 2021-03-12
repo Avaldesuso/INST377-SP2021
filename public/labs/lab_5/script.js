@@ -1,41 +1,16 @@
-const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
-
-const cities = [];
-
-fetch(endpoint)
-.then(blob => blob.json())
-.then(data => cities.push(...data))
-
-function findMatches(wordToMatch, cities){
-    return cities.filter(place => { 
-        const regex = new RegExp(wordToMatch,'gi');
-        return place.name.match(regex) || place.category.match(regex)
-    })};
-
-function displayMatches() {
-    const matchArray = findMatches(this.value,cities);
-    let html = matchArray.map(place => {
-        const regex = new RegExp(this.value,'gi');
-        return `
-        <li>
-        <span clas<li>
-        <span class="name">${place.name} </span>
-        <address>
-        <span class="address_line_1">${place.address_line_1}</span>
-        </address>
-        <span class="category">${place.category}</span>
-        </li>
-        `;
-    }).join('');
-
-    if (this.value.length == 0) {
-        html = [];}
-
-    suggestions.innerHTML = html;
+function mapInit() {
+  // follow the Leaflet Getting Started tutorial here
+  return map;
 }
 
-const searchInput = document.querySelector('.text'); 
-const suggestions = document.querySelector('.suggestions');
+async function dataHandler(mapObjectFromFunction) {
+  // use your assignment 1 data handling code here
+  // and target mapObjectFromFunction to attach markers
+}
 
-searchInput.addEventListener('change', displayMatches);
-searchInput.addEventListener('keyup', displayMatches);
+async function windowActions() {
+  const map = mapInit();
+  await dataHandler(map);
+}
+
+window.onload = windowActions;
