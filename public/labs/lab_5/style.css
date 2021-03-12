@@ -1,5 +1,5 @@
 body {
-    background:rgb(236, 190, 104);
+    background:rgb(255, 255, 255);
     height: 100000vh;
   }
   
@@ -9,17 +9,17 @@ body {
     align-items:center;
   }
   
-  .container {
+  .column {
     min-height: 100%;
     width: 80%;
     margin: 0 auto;
-    text-align:center;
+    text-align: center;
     justify-content: space-between;
   }
   
   h1 {
     font-size: 30px;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -28,12 +28,11 @@ body {
     margin: auto;
     margin-bottom: 5px;
     padding: 8px;
-    font-family: 'Roboto';
   }
   
   input {
     width: 50%;
-    text-align: center;
+    text-align: left;
   }
   
   #mapid{height:480px};
@@ -46,18 +45,15 @@ body {
   .list-item{
     border-radius: 4px;
     color: rgba(25,25,25,09);
-    background: rgb(52, 216, 175);
+    background: rgb(42, 201, 161);
     padding:5px;
   }
   
   .cases li{
-    color: white;
-    font-family: 'Roboto';
+    color: rgb(0, 0, 0);
     padding: 5px;
     margin-bottom: 15px;
-    /* margin-right: 23px; */
     margin-left: 29px;
-    background: linear-gradient(rgb(255, 111, 145), rgb(132, 94, 194));
-    text-align: center;
+    text-align: left;
     width: 90%;
   }
